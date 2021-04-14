@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         recyclerView = findViewById(R.id.rv);
-        // здесь нашу переменную привязываем по айди к главной вктивити мейн
+        // здесь нашу переменную привязываем по айди к главной активити мейн
         adapter = new MainAdapter();
         //нашему главному адаптеру  присваиваем наш созданный главный адаптер
 
@@ -35,12 +35,12 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(manager);
 
         list = new ArrayList<>();
-        list.add(0,new itemModel("Shoes","Leather",R.drawable.masha));
-        list.add(1,new itemModel("Shoes","Summer",R.drawable.masha));
-        list.add(2,new itemModel("Winter","Leather",R.drawable.masha));
-        list.add(3,new itemModel("Shoes","Fall",R.drawable.masha));
+        list.add(0,new itemModel("Маша и Медведь","Очень веселый мультик",R.drawable.masha));
+        list.add(1,new itemModel("Русалочка","Грустный мультик  ",R.drawable.fish_prinsess));
+        list.add(2,new itemModel("Холодное сердце ","Учит дружбе детей и взрослых",R.drawable.cold_h));
+        list.add(3,new itemModel("Душа ","Очень душевный  ",R.drawable.soul_cartoon));
 
-
+       //
         adapter.addText(list);
 
 
